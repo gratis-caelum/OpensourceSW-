@@ -27,6 +27,7 @@ void Zipfian(const int write, const int read, Bplustree<Key>& bpt) {
     }
     auto w_end = Clock::now();
     std::cout << "After Insert\n";
+    bpt.Print();  // Print tree structure after insertion
 
     // Calculate insertion time
     float w_time = std::chrono::duration_cast<std::chrono::nanoseconds>(w_end - w_start).count() * 0.001;
@@ -59,6 +60,7 @@ void Uniform(const int write, const int read, Bplustree<Key>& bpt) {
     }
     auto w_end = Clock::now();
     std::cout << "After Insert\n";
+    bpt.Print();  // Print tree structure after insertion
 
     // Calculate insertion time
     float w_time = std::chrono::duration_cast<std::chrono::nanoseconds>(w_end - w_start).count() * 0.001;
@@ -85,6 +87,7 @@ void RevSequential(const int write, const int read, Bplustree<Key>& bpt) {
     }
     auto w_end = Clock::now();
     std::cout << "After Insert\n";
+    bpt.Print();  // Print tree structure after insertion
 
     // Calculate insertion time
     float w_time = std::chrono::duration_cast<std::chrono::nanoseconds>(w_end - w_start).count() * 0.001;
@@ -111,6 +114,7 @@ void Sequential(const int write, const int read, Bplustree<Key>& bpt) {
     }
     auto w_end = Clock::now();
     std::cout << "After Insert\n";
+    bpt.Print();  // Print tree structure after insertion
 
     // Calculate insertion time
     float w_time = std::chrono::duration_cast<std::chrono::nanoseconds>(w_end - w_start).count() * 0.001;
